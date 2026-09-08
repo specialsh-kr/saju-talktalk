@@ -1,0 +1,27 @@
+{
+  "name": "사주톡톡 · 쉬운 사주상담",
+  "short_name": "사주톡톡",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4f3f8",
+  "theme_color": "#241b4a",
+  "lang": "ko-KR",
+  "description": "사주팔자, 대운, 세운, 궁합, 좋은 날을 쉽고 구체적으로 풀어주는 사주 앱",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+오늘결 3.0
+
+Calendar engine:
+lunar-javascript 1.7.7
+Copyright 6tail
+License: MIT
+https://github.com/6tail/lunar-javascript
+
+Application UI/code in this package was prepared for the user project.

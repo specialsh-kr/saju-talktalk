@@ -1,0 +1,5 @@
+const CACHE='todaygyeol-13.0';
+const CORE=['./','./index.html','./styles.css','./v8.css','./v10.css','./v12.css','./v13.css','./app.js','./v8.js','./v10.js','./v12.js','./v13.js','./manifest.webmanifest','./icon-192.png','./icon-512.png','./assets/bg-home.svg','./assets/bg-ask.svg','./assets/bg-calendar.svg','./assets/bg-profile.svg','./assets/bg-match.svg','./assets/bg-more.svg'];
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(cached=>cached||fetch(e.request).then(resp=>{const copy=resp.clone();caches.open(CACHE).then(c=>c.put(e.request,copy)).catch(()=>{});return resp;}).catch(()=>e.request.mode==='navigate'?caches.match('./index.html'):undefined)))});
