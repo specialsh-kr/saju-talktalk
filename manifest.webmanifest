@@ -7,9 +7,9 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#f4f3f8",
-  "theme_color": "#241b4a",
+  "theme_color": "#9b3f33",
   "lang": "ko-KR",
-  "description": "사주팔자, 대운, 세운, 궁합, 좋은 날을 쉽고 구체적으로 풀어주는 사주 앱",
+  "description": "사주팔자와 운의 흐름을 어렵지 않은 말과 실제 상황으로 풀어주는 상담형 앱",
   "icons": [
     {
       "src": "icon-192.png",
